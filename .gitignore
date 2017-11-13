@@ -5,3 +5,4 @@
 *.box
 *.iso
 *.pem
+/vagrant-share/.oci-auth/oci_ssh_instance_key
