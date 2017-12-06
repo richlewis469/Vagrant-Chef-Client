@@ -23,6 +23,10 @@ yum makecache fast
 echo " "
 /bin/sed -i.bak -e 's/SELINUX=enforcing/SELINUX=disabled/' /etc/selinux/config
 
+# Enable Nginx Web Service
+firewall-cmd --zone=public --add-service=http --permanent
+firewall-cmd --reload
+
 echo " "
 ip addr show
 

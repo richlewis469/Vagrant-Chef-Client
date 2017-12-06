@@ -13,7 +13,8 @@ Access:
 - C:\> vagrant ssh
 - C:\> vagrant ssh-config
 - chef-client
-
+- Web Server running at http://127.0.0.1:20080
+- Secure Web Server running at https://127.0.0.1:20443
 ------------------------------------------------------
 MSG_EOF
 
@@ -38,7 +39,6 @@ Vagrant.configure("2") do |config|
   # within the machine from a port on the host machine. In the example below,
   # accessing "localhost:2280" will access port 80 on the guest machine.
   config.vm.network "forwarded_port", guest: 80, host: 20080, auto_correct: true
-  config.vm.network "forwarded_port", guest: 443, host: 20443, auto_correct: true
 
   # Share an additional folder to the guest VM, default is "share" in the current directory.
   config.vm.synced_folder "vagrant-share", "/vagrant-share"
