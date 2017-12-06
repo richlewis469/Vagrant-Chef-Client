@@ -1,7 +1,7 @@
 # -*- mode: ruby -*-
 # vi: set ft=ruby :
 
-proxyServer = "adc-proxy.oracle.com"
+proxyServer = "proxy.lab.net"
 proxyServerPort = "80"
 vpnType = "OpenVPN"
 vpnAdapter = "OpenVPN Miniport Adapter for Windows x64"
