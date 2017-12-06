@@ -14,7 +14,6 @@ Access:
 - C:\> vagrant ssh-config
 - chef-client
 - Web Server running at http://127.0.0.1:20080
-- Secure Web Server running at https://127.0.0.1:20443
 ------------------------------------------------------
 MSG_EOF
 
